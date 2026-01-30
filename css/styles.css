@@ -144,11 +144,11 @@ textarea:focus:invalid {
 
 /* PREVENT RED BORDERS ON LOAD
    For required fields WITHOUT placeholders */
-input:required:invalid:not(:focus),
-select:required:invalid:not(:focus),
-textarea:required:invalid:not(:focus) {
+/* Prevent red on load ONLY when the field is empty */
+input:required:invalid:placeholder-shown {
   border: 1px solid var(--border);
 }
+
 
 /* ============================
    TABLE STYLING
