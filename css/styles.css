@@ -123,23 +123,23 @@ textarea {
   border-radius: 4px;
 }
 
-/* Valid state */
+/* Valid state — bright green */
 input:valid,
 select:valid,
 textarea:valid {
-  border: 2px solid green;
+  border: 2px solid #00cc00; /* bright green */
 }
 
-/* Invalid state – only after interaction */
+/* Invalid state – only after interaction — bright red */
 input:not(:placeholder-shown):invalid {
-  border: 2px solid red;
+  border: 2px solid #ff3333; /* bright red */
 }
 
-/* For controls without placeholder */
+/* For controls without placeholder — bright red */
 input:focus:invalid,
 select:focus:invalid,
 textarea:focus:invalid {
-  border: 2px solid red;
+  border: 2px solid #ff3333; /* bright red */
 }
 
 /* PREVENT RED BORDERS ON LOAD
